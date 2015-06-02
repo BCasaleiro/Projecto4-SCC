@@ -24,11 +24,11 @@ public class KSTest {
         double n = (double) num.length;
 
         for (int i = 0; i < num.length; i++) {
-            d1[i] = ((i + 1) / n) - num[i];
+            d1[i] = (i / n) - num[i];
         }
 
         for (int i = 0; i < num.length; i++) {
-            d2[i] = (num[i] - (i) / n);
+            d2[i] = (num[i] - (i - 1) / n);
         }
 
         double d1max = d1[0];
@@ -63,7 +63,7 @@ public class KSTest {
         
         double cd = ( Math.sqrt(size) + 0.12 + ( 0.11/Math.sqrt(size) ) ) * d;
 
-        if (1 - dalpha > cd) {
+        if (1.358 > cd) {
             System.out.println("Given numbers uniformity accepted");
             return true;
         } else {
