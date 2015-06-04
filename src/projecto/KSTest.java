@@ -1,5 +1,7 @@
 package projecto;
 
+import java.util.Arrays;
+
 public class KSTest {
     
     private int size;
@@ -8,16 +10,7 @@ public class KSTest {
         
         size = num.length;
         
-        for (int i = 0; i < num.length; i++) {
-            for (int j = i + 1; j < num.length; j++) {
-                if (num[i] > num[j]) {
-                    double temp;
-                    temp = num[i];
-                    num[i] = num[j];
-                    num[j] = temp;
-                }
-            }
-        }
+        Arrays.sort(num);
 
         double d1[] = new double[num.length];
         double d2[] = new double[num.length];
