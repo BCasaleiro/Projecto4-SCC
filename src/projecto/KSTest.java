@@ -48,14 +48,16 @@ public class KSTest {
 
         if (dplus > dminus) {
             d = dplus;
-            System.out.println("D = " + d);
         } else {
             d = dminus;
-            System.out.println("D = " + d);
         }
+        
+        System.out.println("D = " + d);
         
         double cd = ( Math.sqrt(size) + 0.12 + ( 0.11/Math.sqrt(size) ) ) * d;
 
+        System.out.println("CD = " + cd);
+        
         if (1.358 > cd) {
             System.out.println("Given numbers uniformity accepted");
             return true;
